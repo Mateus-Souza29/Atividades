@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Input</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <h1 id="titulogeral" class="titulogeral">Lista de Input - HTML</h1>
+    <form action="">
+
+    <br><br>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" class="nome">
+
+    <br><br>
+    <label for="senha">Senha</label>
+    <input type="password" class="senha" id="senha">
+
+    <br><br>
+    <label for="cpf">CPF</label>
+    <input type="number" class="cpf" id="cpf">
+
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" class="email" id="email">
+
+    <br><br>
+    <label for="date">Data de Nascimento</label>
+    <input type="date" class="date" id="date">
+
+    <br><br>
+    <label for="vol">Cor do Veículo</label>
+    <input type="color" class="color" id="color">
+
+    <br><br>
+    <label for="time">Horário</label>
+    <input type="time" class="time" id="time">
+
+    <br><br>
+    <label for="week">Dia da Semana</label>
+    <input type="week" class="week" id="week">
+
+    <br><br>
+    <label for="masc">Masculino</label>
+    <input type="radio" id="masc" class="masc" value="masc" name="gen">
+    <br>
+    <label for="fem">Feminino</label>
+    <input type="radio" id="fem" class="fem" value="fem" name="gen">
+
+    <br><br>
+    <label for="analista">Analista</label>
+    <input type="checkbox" id="func" class="func" name="funcao">
+    <br>
+    <label for="gsti">Gerente de Tecnologia</label>
+    <input type="checkbox" class="gsti" name="funcao" id="gsti" >
+
+    <br><br>
+    <label for="vol">Volume</label>
+    <input type="range" class="vol" id="vol">
+
+    <br><br>
+    <label for="arquivo">Escolha um Arquivo - Formato: .pdf, .png, .jpg</label>
+    <input type="file" name="arquivo" class="arquivo" id="arquivo" 
+           accept=".pdf, .png, .jpg">
+
+    <br><br>
+    <label for="busca">Pesquisar</label>
+    <input type="search" name="busca" class="busca" id="busca">
+
+    <br><br>
+    <label for="url">Endereço do Site</label>
+    <input type="url" name="url" class="url" id="url">
+
+    <br><br>
+    <label for="contato">Telefone</label>
+    <input type="tel" name="contato" class="contato" id="contato">
+
+    <br><br>
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="40"
+              placeholder="Digite sua Mensagem Aqui..."></textarea>
+
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar Dados">
+
+    <br><br>
+    <label for="cidade">Escolha sua Cidade</label>
+    <select name="cidade" id="cidade">
+        <option value="" disabled selected>Selecione Uma Opção</option>
+        <option value="moc">Montes Claros</option>
+        <option value="sajp">São João da Ponte</option>
+        <option value="jana">Janaúba</option>
+    </select>
+
+
+    <br><br>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        input[type = "text"],
+        input[type = "password"]{
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 16px
+        }
+
+        #btnlogin{
+            margin-top: 15px;
+            padding: 8px;
+            background-color: aquamarine;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 15px;
+        }
+

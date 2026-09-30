@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Input</title>
+
+    <style>
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        input[type = "text"],
+        input[type = "password"],
+        input[type = "email"],
+        input[type = "tel"]{
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 16px
+        }
+
+     
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        li{
+            padding: 8px;
+            font-weight: bold;
+    
+        }
+
+        
+
+        
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+
+            <legend>Suas Informações</legend>
+
+            <ol>
+                <li>
+            <label for="nome">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Nome Completo"></li>
+
+            <li><label for="email">Email:</label>
+            <input type="email" class="email" id="email" placeholder="Ex: mas@Gmail.com"></li>
+
+              <li><label for="contato">Telefone</label>
+            <input type="tel" name="contato" class="contato" id="contato" placeholder="Ex: +553899999999"></li>
+            </ol>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Endereço</legend>
+
+            <ol>
+            <li><label for="end">Endereço:</label>
+            <textarea name="end" id="end" rows="5" cols="40"
+              placeholder="Digite seu Endereço..."></textarea></li>
+
+            <li><label for="ctp">Cartão Postal:</label>
+            <input type="text" name="ctp" id="ctp"></li>
+
+            <li><label for="pais">País:</label>
+            <input type="text" class="pais" id="pais"></li>
+            </ol>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Cartão de Crédito</legend>
+
+            <ol>
+            <li>
+                <fieldset>
+                    <legend>Tipo do Cartão:</legend>
+                    <ol>
+
+                        <li><input type="radio" id="vis" class="vis" value="vis" name="gen">
+                        <label for="masc">VISA</label></li>
+
+                        <li><input type="radio" id="ame" class="ame" value="ame" name="gen">
+                        <label for="fem">AmEx</label></li>
+
+                        <li><input type="radio" name="mas" id="mas" value="mas" name="mas">
+                        <label for="ndc">Mastercard</label></li>
+
+                    </ol>
+                </fieldset></li>
+
+            <li><label for="nmb">Número do Cartão:</label>
+            <input type="number" name="nmb" id="nmb"></li>
+
+            <li><label for="senha">senha:</label>
+            <input type="password" class="senha" id="senha"></li>
+
+            <li><label for="cart">Nome do Cartão:</label>
+            <input type="text" class="cart" id="cart" placeholder="Número Exato"></li>
+            </ol>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

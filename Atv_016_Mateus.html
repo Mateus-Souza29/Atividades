@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <form action="">
+
+        <label for="nome">Insira seu Nome:</label>
+        <input type="text" name="nome" id="nome" class="nome" placeholder="Insira seu Nome...">
+
+        <br><br>
+        <label for="nome">Insira seu Sobrenome:</label>
+        <input type="text" name="nome" id="nome" class="nome" placeholder="Insira seu Sobrenome...">
+
+        <br><br>
+        <label for="senha">Insira sua Senha:</label>
+        <input type="password" name="senha" id="senha" class="senha" placeholder="Insira sua Senha...">
+
+        <br><br>Sexo: <br>
+        <input type="radio" id="masc" class="masc" value="masc" name="gen">
+        <label for="masc">Masculino</label>
+        <br>
+        <input type="radio" id="fem" class="fem" value="fem" name="gen">
+        <label for="fem">Feminino</label>
+        <br>
+        <input type="radio" name="ndc" id="ndc" value="ndc" name="gen">
+        <label for="ndc">Não Declarado</label>
+
+        <br><br>Marque as Opções de seu Interesse: <br>
+        <input type="checkbox" name="func" id="asp" class="asp">
+        <label for="asp">ASP-NET</label>
+        <br>
+        <input type="checkbox" name="func" id="java" class="java">
+        <label for="java">Javascript</label>
+        <br>
+        <input type="checkbox" name="func" id="php" class="php">
+        <label for="php">PHP</label>
+        <br>
+        <input type="checkbox" name="func" id="pyt" class="pyt">
+        <label for="pyt">Python</label>
+
+        <br><br>
+        <label for="mensagem">Entre com seu Comentário:</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" rows="6" cols="45"
+              placeholder="Digite sua Mensagem Aqui..."></textarea>
+
+        <br><br>
+        <label for="tec">Selecione sua Tecnologia:</label>
+            <select name="tec" id="tec">
+                <option value="" disabled selected>Selecione Uma Opção</option>
+                <option value="asp">ASP-NET</option>
+                <option value="lgc">Linguagem C</option>
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+            </select>
+
+        <br><br>
+        <label for="arquivo">Escolha um Arquivo para Upload:</label>
+        <input type="file" name="arquivo" class="arquivo" id="arquivo">     
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar Dados">
+        
+    </form>
+</body>
+
+</html>

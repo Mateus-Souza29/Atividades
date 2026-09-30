@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv_020</title>
+
+     <style>
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+             }
+        
+        input{
+            margin-top: 10px;
+             }
+
+        fieldset{
+            gap: 70px;
+            max-width: 550px;
+            padding: 15px;
+            margin-top: 10px;
+            }
+
+    </style>
+
+</head>
+
+<body>
+   
+    <form action="">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" class="nome">
+
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="number" class="idade" id="idade">
+
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" class="senha" id="senha">
+
+    <fieldset>
+
+        <legend>Sexo:</legend>
+
+        <input type="radio" id="masc" class="masc" value="masc" name="gen">
+        <label for="masc">Masculino</label>
+        <input type="radio" id="fem" class="fem" value="fem" name="gen">
+        <label for="fem">Feminino</label>
+        
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Estado Civil:</legend>
+
+        <input type="radio" id="cas" class="cas" value="cas" name="est">
+        <label for="cas">Casado</label>
+        <input type="radio" id="enr" class="enr" value="enr" name="est">
+        <label for="enr">Enrolado</label>
+        <input type="radio" id="sol" class="sol" value="sol" name="est">
+        <label for="sol">Solteiro</label>
+        
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Comida Favorita:</legend>
+
+        <input type="checkbox" id="Macarrão" class="Macarrão" name="funcao">
+        <label for="Macarrão">Macarrão</label>
+        <br>
+         <input type="checkbox" class="Frango" name="funcao" id="Frango">
+        <label for="Frango">Frango</label>
+
+    </fieldset>
+
+    <br>
+    <label for="arquivo">Selecione seu Arquivo:</label>
+    <input type="file" name="arquivo" class="arquivo" id="arquivo">
+
+    <br>
+    <label for="color">Selecione uma Cor:</label>
+    <input type="color" name="color" id="color">
+
+
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" class="email" id="email">
+
+    <br>
+    <label for="contato">Telefone:</label>
+    <input type="tel" name="contato" class="contato" id="contato">
+
+    <br>
+    <label for="vol"></label>
+    <input type="range" class="vol" id="vol">
+
+    <br>
+    <label for="date">Selecione uma Data:</label>
+    <input type="date" class="date" id="date">
+
+    <br>
+    <label for="dateh">Selecione uma Data e Hora:</label>
+    <input type="datetime" class="date" id="date">
+
+    <br>
+    <label for="datehl">Selecione uma Data e Hora Local:</label>
+    <input type="datetime-local" class="date" id="date">
+
+    <br>
+    <label for="time">Selecione um Horário:</label>
+    <input type="time" class="time" id="time">
+
+    <br>
+    <label for="week">Selecione uma Semana:</label>
+    <input type="week" class="week" id="week">
+
+    <br>
+    <label for="month">Selecione um Mês:</label>
+    <input type="month" class="month" id="month">
+
+    <br><br>
+    <label for="mensagem"></label>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="30"
+              placeholder="Digite sua Mensagem Aqui..."></textarea>
+
+    <br>
+    <label for="cor"></label>
+    <select name="cor" id="cor">
+        <option value="" disabled selected>Selecione Uma Cor</option>
+        <option value="verm">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="verd">Verde</option>
+    </select>
+
+    <label for="url">URL:</label>
+    <input type="url" name="url" class="url" id="url">
+
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar Dados">
+
+    </form>
+</body>
+
+</html>

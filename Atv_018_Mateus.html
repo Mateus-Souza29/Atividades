@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+
+    <style>
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+             }
+        
+        input{
+            margin-top: 10px;
+             }
+
+
+        fieldset{
+            gap: 70px;
+            max-width: 550px;
+            padding: 15px;
+            margin-top: 10px;
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Formulário</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="name" id="name"> <br>
+
+            <label for="ende">Endereço:</label>
+            <input type="text" name="ende" id="ende"> <br>
+
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" id="city"> 
+
+            <br><br>
+            <label for="uf">Estado:</label>
+            <select name="uf" id="uf">
+                <option value="" disabled selected>Selecione Uma Opção</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>         
+                <option value="MG">Minas Gerais</option>                    
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+             <b> Natureza do Cargo:</b> <br>
+             <input type="radio" id="ger" class="ger" value="ger" name="cargo">
+             <label for="ger">Gerência</label>
+             <input type="radio" id="fin" class="fin" value="fin" name="cargo">
+             <label for="fin">Financeiro</label>
+             <input type="radio" id="rec" class="rec" value="rec" name="cargo">
+             <label for="rec">Recepção</label>
+             <input type="radio" id="adm" class="adm" value="adm" name="cargo">
+             <label for="adm">Administrativo</label>
+             <input type="radio" id="jur" class="jur" value="jur" name="cargo">
+             <label for="jur">Juridico</label>
+
+             <br><br>
+             <b> Área de Interesse:</b> <br>
+             <input type="checkbox" id="comp" class="comp" name="funcao">
+             <label for="comp">Computação</label>
+             <input type="checkbox" class="bio" name="funcao" id="bio" >
+             <label for="bio">Biologia</label>
+             <input type="checkbox" id="mea" class="fumeanc" name="funcao">
+             <label for="mea">Meio Ambiente</label>
+             <input type="checkbox" class="eng" name="funcao" id="eng" >
+             <label for="eng">Engenharia</label>
+             <input type="checkbox" id="his" class="his" name="funcao">
+             <label for="his">História</label>
+
+             <br><br>
+             <label for="Mini-Curriculo">Mini-Curriculo:</label>
+             <textarea name="Mini-Curriculo" id="Mini-Curriculo" rows="5" cols="40"
+              placeholder="Digite seu Mini-Curriculo Aqui..."></textarea>
+             
+        </fieldset>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+
+</html>
